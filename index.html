@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>myHomePage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- ===== BACKGROUND IMAGE ===== -->
+    <img class="bg" src="bg-img.jpg" alt="">
+    ===== PARENT DIV =====
+    <div class="parent_div">
+
+        <!-- ===== GOOGLE ===== -->
+        <form class="search_engine google" action="https://www.google.com/search">
+            <h1>
+                <span class="color_1">S</span><span class="color_2">o</span><span class="color_3">o</span><span
+                    class="color_4">a</span><span class="color_5">i</span><span class="color_6">b</span>
+            </h1>
+            <div class="search_box googlebox">
+                <input id="google" autocomplete="off" name="q" type="text" placeholder="Search Google">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </form>
+
+        <!-- ===== YOUTUBE ===== -->
+
+        <form class="search_engine youtube" action="https://www.youtube.com/results">
+            <img src="youtube.png" alt="">
+            <div class="search_box">
+                <input autocomplete="off" name="search_query" type="text" placeholder="Search any video on youtube...">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </form>
+
+        <!-- ===== KATEMOVIE ===== -->
+
+        <form class="search_engine katemovie" action="https://katmoviehd.se">
+            <img src="katmoviehd.png" alt="">
+            <div class="search_box">
+                <input autocomplete="off" name="s" type="text" placeholder="Search any movie....">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </form>
+
+        <!-- ===== NEWGAESBOX ===== -->
+
+        <form class="search_engine newgamesbox" action="https://www.newgamesbox.net/">
+            <img src="newgamesbox.png" alt="">
+            <div class="search_box">
+                <input autocomplete="off" name="s" type="text" placeholder="Search any game....">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </form>
+
+    </div>
+    <!-- ===== JAVASCRIPT ===== -->
+    <script type="text/javascript">
+        document.getElementById("google").focus();
+    </script>
+
+</body>
+
+</html>

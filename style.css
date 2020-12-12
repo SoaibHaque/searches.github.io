@@ -1,0 +1,189 @@
+/* ===== FONT ===== */
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+/* ===== BACKGROUND IMAGE ===== */
+img.bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    filter: brightness(.7)blur(2px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+/* ===== RESET DEFAULT ===== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-style: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+}
+
+
+/* ===== FOR CORRECTION ===== */
+div {
+    display: inline-block;
+}
+
+/* ===== PARENT DIV ===== */
+div.parent_div {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem 3rem;
+}
+
+form.google {
+    grid-area: 1/1/2/-1;
+}
+
+form.youtube {
+    grid-area: 2/1/3/2;
+}
+
+form.katemovie {
+    grid-area: 2/2/3/3;
+}
+
+form.newgamesbox {
+    grid-area: 2/3/3/-1;
+}
+
+/* ===== H1 TAG ===== */
+form.google h1 {
+    font-family: Product Sans;
+    font-size: 6rem;
+    font-weight: lighter;
+    margin-bottom: 3rem;
+}
+
+/* ===== GOOGLE LOGO ===== */
+.color_1 {
+    color: #4285F4;
+}
+
+.color_2 {
+    color: #EA4335;
+}
+
+.color_3 {
+    color: #FBBC05;
+}
+
+.color_4 {
+    color: #4285F4;
+}
+
+.color_5 {
+    color: #34A853;
+}
+
+.color_6 {
+    color: #EA4335;
+}
+
+/* ===== GOOGLE SEARCH BOX ===== */
+div.search_box.googlebox {
+    width: 35rem;
+    height: 2.8rem;
+}
+
+div.search_box.googlebox input {
+    outline: none;
+    border: none;
+    margin: auto .6rem;
+    padding: .98rem 0;
+    width: 30rem;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+i.fa.fa-search {
+    font-size: 1.2rem;
+    color: #5f5e5e;
+    text-shadow: none;
+}
+
+/* ===== OTHER SEARCH BOX ====== */
+div.search_box {
+    background-color: #e7e7e7;
+    width: 19rem;
+    height: 2.5rem;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    border-radius: 50px;
+}
+
+div.search_box input {
+    text-shadow: none;
+    color: black;
+    background: none;
+    outline: none;
+    border: none;
+    margin: auto .6rem;
+    padding: .8rem 0;
+    width: 14rem;
+}
+
+/* ===== CORRECTION ===== */
+form.youtube img {
+    width: 9rem;
+}
+
+form.katemovie img {
+    width: 16rem;
+    margin: 3.35rem 0;
+}
+
+form.newgamesbox img {
+    margin: 1.35rem auto;
+    width: 14rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 992px) {
+
+    /* ===== PARENT DIV ===== */
+    div.parent_div {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 4rem 3rem;
+    }
+
+    form.google {
+        grid-area: 1/1/2/-1;
+    }
+
+    form.youtube {
+        grid-area: 2/1/3/-1;
+    }
+
+    form.katemovie {
+        grid-area: 3/1/4/-1;
+    }
+
+    form.newgamesbox {
+        grid-area: 4/1/5/-1;
+    }
+}
